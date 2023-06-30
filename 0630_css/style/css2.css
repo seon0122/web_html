@@ -1,0 +1,42 @@
+main {
+    background-color:rgba(0,0,0,0.8);
+    padding:50px;
+}
+main .box {
+    width:200px; height:200px;
+    font-size:4rem;
+    border:5px dotted #fff;
+    border-radius:50%; /* 원: 너비가 200px > 100px / 50% (너비값 변경 상관없는 상대값) */
+    text-align:center; /* 수평 가운데 */
+    line-height:200px; /* 수직 가운데 */
+    /* line-height값과 height값을 동일하게 작성하면 요소(텍스트, 이미지 등)가 수직 중앙으로 온다(1행일 경우 가능)
+    (2행인 경우 padding-top 으로 내림) */
+}
+main .a {
+    float:left;
+    /* padding(안쪽여백)추가 시 실제 크기(너비/높이)에 변화를 주지 않는다. */
+    box-sizing:border-box;
+    /* padding-right:50px; */
+    /* width:150px; */
+    background-color:lightblue;
+}
+main .b {
+    float:left;
+    clear:both;
+    /* float:left; */
+    box-sizing:border-box;
+    /* padding-top:30px; */
+    /* height:170px; */
+    font-size:3rem;
+    background-color:lightsalmon;
+}
+main .c {
+    float:left;
+    /* float:left; */
+    /* clear:both; */
+    /* float:none; */
+    box-sizing:border-box;
+    /* padding:10px 20px; */
+    /* width:160px; height:180px; */
+    background-color:lightseagreen;
+}
