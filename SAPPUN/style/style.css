@@ -1,16 +1,35 @@
+/* all layout */
+header .title, header nav, main .bnr, main .best, footer {
+    width:1300px; margin:0 auto;
+}
 /* header top */
 header {background-color:lemonchiffon;}
-header .h_top_bg {}
-header .h_top_bg p {}
-header .h_top_bg p a {}
+header .h_top_bg {
+    height:36px; text-align:center; line-height:36px;
+    background-color:#ccc;
+}
+header .h_top_bg a {}
+header .h_top_bg a span{
+    font-size:0.833rem; font-weight:700; letter-spacing:-0.02em;
+}
 /* header title */
-header .title {}
-header .title h1 {}
+header .title {
+    background-color: lightpink;
+    width:1300px; height:100px;
+}
+header .title h1 {
+    width:130px; height:19px;
+}
 header .title h1 a {}
-header .title .left {background-color:lightblue;}
+header .title h1 a img {width:100%}
+header .title .left {
+    background-color:lightblue;
+}
 header .title .left li {}
 header .title .left li a {}
-header .title .right {background-color:lightgreen;}
+header .title .right {
+    background-color:lightgreen;
+}
 header .title .right li {}
 header .title .right li a {}
 header .title .right li a img {}
@@ -20,7 +39,7 @@ header nav ul {}
 header nav ul li {}
 header nav ul li a {}
 /* main */
-main {}
+main {background-color: aqua;}
 main a {}
 main a img {}
 /* main quickmenu */
@@ -32,7 +51,7 @@ main .bnr {}
 main .bnr a {}
 main .bnr a img {}
 /* main 상품 */
-main .best {}
+main .best {background-color: yellow;}
 main .best h2 {}
 main .best .items {}
 main .best .items li {}
