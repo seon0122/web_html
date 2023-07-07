@@ -1,0 +1,262 @@
+/* popup */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    width:34px; height:34px;
+}
+#top img {width:100%}
+/* all layout */
+header, main .visual, main .service, main .bnr_bg .bnr, main .board, 
+main .field_info, main .news, footer {
+    background-color:lightgreen;
+    width:1152px; margin:0 auto;
+}
+/* header-h top */
+header {}
+header #h_top {
+    background-color: chartreuse;
+    height:48px;
+}
+header #h_top .left {
+    background-color:cyan;
+    float:left;
+    }
+header #h_top .left h1 {
+    width:110px; height:28px;
+    float:left;
+    padding-top:10px;
+}
+header #h_top .left h1 a {}
+header #h_top .left h1 a img {width:100%;}
+header #h_top .left nav {
+    float:left;
+}
+header #h_top .left nav ul {}
+header #h_top .left nav ul li {
+    float:left; margin-left:20px;
+    letter-spacing:-0.02em;
+}
+header #h_top .left nav ul li a {
+    line-height:48px;
+}
+header #h_top .right {
+    background-color: cornflowerblue;
+    float:right;
+}
+header #h_top .right li {
+    float:left; margin-left:20px;
+    letter-spacing:-0.02em;
+}
+header #h_top .right li:first-child {margin-left:0;}
+/* header #h_top .right li:nth-child(1) {margin-left:0;} */
+header #h_top .right li a {line-height:48px;}
+/* header-h btm */
+header #h_btm {
+    background-color:gray;
+    height:119px;
+}
+header #h_btm h1 {
+    background-color:yellow;
+    float:left;
+    width:150px; height:28px;
+    padding-top:45.5px;
+}
+header #h_btm h1 a {}
+header #h_btm h1 a img {width:100%;}
+header #h_btm #search_frm {
+    background-color:lime;
+    float:left; 
+    width:369px; height:46px;
+    border:2px solid #1e6cb3;
+    padding:10px 20px 0;
+    margin:36.5px 0 0 230.5px;
+}
+header #h_btm #search_frm fieldset {border:0;}
+header #h_btm #search_frm fieldset legend {display:none;}
+header #h_btm #search_frm fieldset input {
+    float:left;
+    width:calc(100% - 20px);
+}
+header #h_btm #search_frm fieldset input::placeholder {
+    color:#1e6cb3; letter-spacing:-0.02em;
+}
+header #h_btm #search_frm fieldset #search_btn {
+    float:right;
+    width:20px; height:20px; 
+    border:0; background:none;
+    cursor:pointer;
+}
+header #h_btm #search_frm fieldset #search_btn img {width:100%;}
+header #h_btm .right {
+    background-color: yellow;
+    float:right; margin-top:17px;}
+header #h_btm .right #langfrm {
+    text-align:right;
+}
+header #h_btm .right #langfrm fieldset {border:0;}
+header #h_btm .right #langfrm fieldset legend {display:none;}
+header #h_btm .right #langfrm fieldset select {
+    font-size:0.833rem; letter-spacing:-0.02em; 
+    width:93px; padding:5px 0; border:1px solid #1e6cb3;
+}
+header #h_btm .right #langfrm fieldset select option {
+    /* font-size:0.833rem; letter-spacing:-0.02em; */
+}
+header #h_btm .right #langfrm fieldset #lang_btn {
+    width:39px; height:33px; margin-left:10px;
+    font-size:0.833rem; letter-spacing:-0.02em;
+    background-color:#1e6cb3; color:#fff;
+    border:0; cursor:pointer;
+}
+header #h_btm .right .weather {}
+header #h_btm .right .weather .current_weather {padding:10px 0;}
+header #h_btm .right .weather .current_weather em {
+    font-size:2.074rem; font-weight:500; letter-spacing:-0.02em;
+}
+header #h_btm .right .weather .current_dust {
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
+/* main */
+main {}
+/* main-1광고배너 */
+main .visual {
+    background-color: pink;
+    overflow:hidden;
+}
+main .visual .left {
+    width:770px; height:350px;
+    position:relative;/* 겹치는 대상 부모기준 */
+    float:left;
+}
+main .visual .left img {width:100%}
+main .visual .left .close {
+    font-weight:500; letter-spacing:-0.02em;
+    border:0; border-radius:5px;
+    background-color:#1e6cb3; color:#fff;
+    padding:10px;
+    position:absolute; /* 겹치는대상 */
+    right:10px; bottom:10px;
+}
+main .visual .right {
+    background-color: yellow;
+    width:360px; height:230px;
+    float:right;
+    }
+main .visual .right .covid {
+    position:relative; display:block;
+    width:360px; height:230px;
+    margin-bottom:10px;
+}
+main .visual .right .covid span {
+    background-color: aqua;
+    position:absolute;
+}
+main .visual .right .covid .date {top:17px; right:20px;}
+main .visual .right .covid .data {color:#fff;}
+main .visual .right .covid .data1 {top:84px; left:81px;}
+main .visual .right .covid .data2 {top:84px; right:87px;}
+main .visual .right .covid .data3 {left:58px; bottom:58px;}
+main .visual .right .covid .data4 {right:164px; bottom:57px;}
+main .visual .right .covid .data5 {right:53px; bottom:59px;}
+main .visual .right .covid img {}
+main .visual .right .traffic {}
+main .visual .right .traffic img {}
+/* 주요서비스~새소식 제목 디자인 그룹 */
+/* 정리 후 */
+main section .title {background-color: green;}
+main section .title h2 {}
+main section .title .site {}
+main section .title .more {}
+/* 정리 전 */
+/* main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .field_info .title {}
+main .field_info .title h2 {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title h2 .more {} */
+/* main-2주요서비스 */
+main .service {}
+main .service .title {}
+main .service .title h2 {}
+main .service .title .site {}
+main .service .contents {}
+main .service .contents a {}
+main .service .contents a img {}
+main .service .contents a span {}
+/* main-3배너 */
+main .bnr_bg {background-color: aqua;}
+main .bnr_bg .bnr {}
+main .bnr_bg .bnr a {}
+main .bnr_bg .bnr a img {}
+/* main-4게시판 */
+main .board {}
+main .board .event {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .event .contents {}
+main .board .event .contents a {}
+main .board .event .contents a span {}
+main .board .event .contents a .administrative {}
+main .board .event .contents a .environment {}
+main .board .event .contents a .welfare {}
+main .board .event .contents a .housing {}
+main .board .event .contents a .culture {}
+main .board .festival {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .festival .contents {}
+main .board .festival .contents a {}
+main .board .festival .contents a span {}
+main .board .festival .contents a .environment {}
+main .board .festival .contents a .economy {}
+main .board .festival .contents a .culture {}
+main .board .service {}
+main .board .service .title {}
+main .board .service .title h2 {}
+main .board .service .contents {}
+main .board .service .contents a {}
+/* main-5분야정보 */
+main .field_info {}
+main .field_info .title {}
+main .field_info .title h2 {}
+main .field_info .contents {}
+main .field_info .contents a {}
+main .field_info .contents a img {}
+main .field_info .contents a span {}
+/* main-6새소식 */
+main .news {}
+main .news .title {}
+main .news .title h2 {}
+main .news .title h2 .more {}
+main .news .contents {}
+main .news .contents a {}
+main .news .contents a img {}
+main .news .contents a span {}
+/* footer-f top */
+footer {}
+footer .top {}
+footer .top .left {}
+footer .top .left a {}
+footer .top .right {}
+footer .top .right a {}
+/* footer-f btm */
+footer .btm {}
+footer .btm .left {}
+footer .btm .left p {}
+footer .btm .left p img {}
+footer .btm .left address {}
+footer .btm .left address a {}
+footer .btm .right {}
+footer .btm .right a{}
+footer .btm .right a img{}
