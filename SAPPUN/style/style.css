@@ -1,9 +1,9 @@
 /* all layout */
-header .title, header nav, main .bnr, main .best, footer {
+header .title, header nav, main .bnr, main .product, footer {
     width:1300px; margin:0 auto;
 }
 /* header top */
-header {background-color:lemonchiffon;}
+header {}
 header .h_top_bg {
     height:36px; text-align:center; line-height:36px;
     background-color:#ccc;
@@ -13,60 +13,126 @@ header .h_top_bg a span{
     font-size:0.833rem; font-weight:700; letter-spacing:-0.02em;
 }
 /* header title */
-header .title {
-    background-color: lightpink;
-    width:1300px; height:100px;
-}
+header .title {height:100px;}
 header .title h1 {
     width:130px; height:19px;
+    float:left; margin:40.5px 0 0 586px;
 }
 header .title h1 a {}
-header .title h1 a img {width:100%}
-header .title .left {
-    background-color:lightblue;
+header .title h1 a img {width:100%;}
+header .title .user {
+    float:right; margin-top:20px;
 }
-header .title .left li {}
-header .title .left li a {}
-header .title .right {
-    background-color:lightgreen;
+header .title .user .left {float:left;}
+header .title .user .left li {
+    float:left; margin-right:17px; padding-top:10px;
 }
-header .title .right li {}
-header .title .right li a {}
-header .title .right li a img {}
+header .title .user .left li a {
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
+header .title .user .left .join {position:relative;}
+header .title .user .left .join a {}
+header .title .user .left .join .coupon {
+    position:absolute; display:block; margin-top:8px;
+    width:100px; height:24px; text-align:center; padding-top:6px;
+    border:1px solid #ff7f50; border-radius:10px;
+}
+header .title .user .left .join .coupon span {
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
+header .title .user .right {float:right;}
+header .title .user .right a {
+    float:left; padding-right:17px;
+}
+header .title .user .right a:last-child {padding-right:0;}
+header .title .user .right a img {
+    width:28px; height:28px; object-fit:scale-down;
+}
 /* nav */
-header nav {background-color:lightcoral;}
-header nav ul {}
-header nav ul li {}
-header nav ul li a {}
+header nav {height:50px;}
+header nav ul {padding-left:197px;}
+header nav ul li {
+    float:left; padding-right:26px; line-height:50px;
+}
+header nav ul li:last-child {padding-right:0;}
+header nav ul li a {
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
 /* main */
-main {background-color: aqua;}
-main a {}
-main a img {}
+main {}
+main .visual {height:515px;}
+main .visual a {}
+main .visual a img {width:100%; height:515px;}
 /* main quickmenu */
-main #quick_menu {background-color:lime;}
-main #quick_menu a {}
-main #quick_menu a img {}
+main #quick_menu {
+    width:30px; height:30px;
+    position:fixed; right:0; top:533px; z-index:1;
+}
+main #quick_menu a:first-child img {background-color:#ff7f50;}
+main #quick_menu a img {
+    width:100%; height:30px; 
+    object-fit:scale-down; display:block;
+    background-color:#fff; border:1px solid #aaa; margin-top:-1px;
+}
 /* main 배너 */
-main .bnr {}
-main .bnr a {}
-main .bnr a img {}
+main .bnr {overflow:hidden;}
+main .bnr a { 
+    float:left; height:350px; margin:63px 0; padding-right:27.5px;
+}
+main .bnr a:last-child {padding-right:0;}
+main .bnr a img {width:415px; height:350px;}
 /* main 상품 */
-main .best {background-color: yellow;}
-main .best h2 {}
-main .best .items {}
-main .best .items li {}
-main .best .items li a {}
-main .best .items li a img {}
-main .best .items li em {}
-main .best .items li span {}
+main .product {overflow:hidden;}
+main .product h2 {
+    font-size:1.44rem; font-weight:500; 
+    letter-spacing:-0.02em; text-align:center; padding-bottom:63px;
+}
+main .product .items {
+    width:424px; 
+    float:left; margin-right:14px;
+}
+main .product .items:nth-child(4) {margin-right:0;}
+main .product .items:nth-child(7) {margin-right:0;}
+main .product .items a {}
+main .product .items a img {width:100%; padding-bottom:15px;}
+main .product .items p {letter-spacing:-0.02em;}
+main .product p:nth-child(3) {
+    font-size:1.44rem; padding:18px 0 30px 0; border-bottom:1px solid #aaa;
+}
+main .product .items p em {font-size:1.44rem; font-weight:700;}
+main .product .items .sub {
+    display:inline-block; width:100%; padding:16px 0 14px 0;
+}
+main .product .items .sub p {font-size:0.833rem; float:left;}
+main .product .items .sub p:last-child {color:#ff7f50; float:right;}
+main .product .items .contents {padding-bottom:63px;}
+main .product .items .contents .best {
+    background-color:#ffe4c4; color:#fff; 
+    padding:5px; margin-right:7px; float:left;
+    font-weight:500; letter-spacing:-0.02em;
+}
+main .product .items .contents .custom {
+    background-color:#000080; color:#fff; 
+    padding:5px 0; float:left;
+}
 /* main 하단배너 */
-main .bnr_btm {background-color:skyblue;}
-main .bnr_btm img {}
-main .bnr_btm span {}
-main .bnr_btm a {}
-main .bnr_btm a span {}
+main .btm {height:284px; position:relative; display:block;}
+main .btm .contents {padding-bottom:113px; border-bottom:1px solid #aaa;}
+main .btm .contents img {width:100%; height: 284px; object-fit:none;}
+main .btm span {}
+main .btm span:nth-child(2) {
+    font-size:2.074rem; font-weight:700; letter-spacing:-0.02em; color:#fff;
+    position:absolute; top:86px; left:602px;
+}
+main .btm a {}
+main .btm a span {
+    border:1px solid #fff; color:#fff; padding:10px 25px;
+    position:absolute; left:659px; top:133px;
+}
 /* footer */
-footer {background-color:lightgray;}
-footer .top {}
-footer .top a {}
-footer address {}
+footer {}
+footer .top {margin:170px 0 40px 0;}
+footer .top a {color:#aaa; padding-right:44px;}
+footer .top a:nth-child(2) {color:#000;}
+footer .top a:last-child {padding-right:0;}
+footer address {line-height:25px; padding-bottom:33px;}
