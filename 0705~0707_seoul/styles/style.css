@@ -162,10 +162,22 @@ main .visual .right .traffic {}
 main .visual .right .traffic img {}
 /* 주요서비스~새소식 제목 디자인 그룹 */
 /* 정리 후 */
-main section .title {background-color: green;}
-main section .title h2 {}
-main section .title .site {}
-main section .title .more {}
+main section .title {
+    background-color: aquamarine;
+    padding:50px 0 10px; 
+    border-bottom:1px solid #aaa;
+    overflow:hidden;
+}
+main section .title h2 {
+    font-size:1.44rem; font-weight:500; letter-spacing:-0.02em;
+    float:left;
+}
+main section .title .site {
+    float:right;
+    border:1px solid #aaa; padding:10px;
+}
+main section .title .more {float:right;}
+main section .title .more i {font-size:30px;}
 /* 정리 전 */
 /* main .service .title {}
 main .service .title h2 {}
@@ -188,18 +200,64 @@ main .service {}
 main .service .title {}
 main .service .title h2 {}
 main .service .title .site {}
-main .service .contents {}
-main .service .contents a {}
+main .service .contents {padding:20px; overflow:hidden;}
+main .service .contents a {
+    float:left; width:9.09%;/* 100/11 */
+    text-align:center;
+}
 main .service .contents a img {}
-main .service .contents a span {}
+main .service .contents a span {
+    display: block; text-align: center;
+    font-size:0.833rem; letter-spacing:-0.02em;
+}
 /* main-3배너 */
-main .bnr_bg {background-color: aqua;}
+main .bnr_bg {
+    background-color:#eff4f8; padding:50px 0; overflow:hidden;
+}
 main .bnr_bg .bnr {}
-main .bnr_bg .bnr a {}
+main .bnr_bg .bnr a {float:left;}
 main .bnr_bg .bnr a img {}
 /* main-4게시판 */
-main .board {}
+main .board {overflow: hidden;}
+/* main-4게시판 그룹모음 */
+main .board > div {
+    width:calc(33.33% - 22px); float:left; /* margin-right:22px; */
+}
+main .board > div .title {height:90px;}
 main .board .event {}
+main .board .festival {margin:0 22px;}
+main .board .service {width:33.33% /* margin-right:0; */}
+/* main-4게시판 카테고리 */
+main .board div .contents a .administrative {color:#028ab6;}
+main .board div .contents a .environment {color:#599100;}
+main .board div .contents a .welfare {color:#d76000;}
+main .board div .contents a .housing {color:#c35c3c;}
+main .board div .contents a .culture {color:#9b64d3;}
+main .board div .contents a .economy {color:#069363;}
+/* main-4게시판 이벤트신청, 행사축제 공통 내용 */
+main .board .event .contents,
+main .board .festival .contents {margin-top:17px;}
+main .board .event .contents a,
+main .board .festival .contents a {
+    display:block; margin-bottom: 25px; overflow: hidden;
+}
+main .board .event .contents a:last-child,
+main .board .festival .contents a:last-child {margin-bottom:0;}
+main .board .event .contents a span,
+main .board .festival .contents a span {}
+main .board .event .contents a span:first-child,
+main .board .festival .contents a span:first-child {
+    margin-right: 10px; float:left;
+}
+main .board .event .contents a span:last-child,
+main .board .festival .contents a span:last-child {
+    background-color: white;
+    white-space:nowrap; /* 줄바꿈x */
+    text-overflow: ellipsis; /* 말줄임 */
+    overflow: hidden; /* 영역 넘치는 부분 숨김 */
+    float:right; width:85%;
+}
+/* main-4게시판 개별내용 */
 main .board .event .title {}
 main .board .event .title h2 {}
 main .board .event .title .more {}
@@ -211,7 +269,6 @@ main .board .event .contents a .environment {}
 main .board .event .contents a .welfare {}
 main .board .event .contents a .housing {}
 main .board .event .contents a .culture {}
-main .board .festival {}
 main .board .festival .title {}
 main .board .festival .title h2 {}
 main .board .festival .title .more {}
@@ -221,35 +278,70 @@ main .board .festival .contents a span {}
 main .board .festival .contents a .environment {}
 main .board .festival .contents a .economy {}
 main .board .festival .contents a .culture {}
-main .board .service {}
-main .board .service .title {}
+main .board .service .title {border:0;}
 main .board .service .title h2 {}
-main .board .service .contents {}
-main .board .service .contents a {}
+main .board .service .contents {
+    background-color: #eff4f8;
+    overflow: hidden; padding:13px;
+}
+main .board .service .contents a {
+    float:left; width:50%; text-align:left; margin-bottom:25px;
+}
+main .board .service .contents a:nth-last-child(2),
+main .board .service .contents a:last-child {margin-bottom: 0;}
 /* main-5분야정보 */
 main .field_info {}
 main .field_info .title {}
 main .field_info .title h2 {}
-main .field_info .contents {}
-main .field_info .contents a {}
+main .field_info .contents {
+    overflow:hidden; padding:20px 40px;
+}
+main .field_info .contents a {
+    float:left; text-align:center; width:12.5%; /* 100/8 상대값*/
+}
 main .field_info .contents a img {}
-main .field_info .contents a span {}
+main .field_info .contents a span {
+    display:block; text-align:center;
+    letter-spacing:-0.02em; padding-top:10px;
+}
 /* main-6새소식 */
 main .news {}
 main .news .title {}
 main .news .title h2 {}
 main .news .title h2 .more {}
-main .news .contents {}
-main .news .contents a {}
+main .news .contents {overflow: hidden; padding-top:40px;}
+main .news .contents a {
+    float:left; width:25%; padding-right:24px;
+}
 main .news .contents a img {}
-main .news .contents a span {}
+main .news .contents a span {
+    line-height:26px; letter-spacing:-0.06em;
+}
 /* footer-f top */
 footer {}
-footer .top {}
-footer .top .left {}
-footer .top .left a {}
-footer .top .right {}
+footer .top {
+    border:1px solid #aaa;
+    border-left: 0; border-right: 0;
+    overflow: hidden;
+}
+footer .top .left {
+    float:left;
+}
+footer .top .left a {letter-spacing:-0.02em;}
+footer .top .right {
+    float:right;
+}
 footer .top .right a {}
+footer .top .right a:first-child {
+    background:white url(../images/icon_sns2/icon_set_sns_01.png) no-repeat;
+    width:25px; height: 25px; 
+    display:inline-block; text-indent:-9999px; /* 화면 밖 글자 내보내기(양수:들여쓰기, 음수:내어쓰기 */
+}
+footer .top .right a:nth-child(2) {
+    background:red url(../images/icon_sns2/icon_set_sns_02.png) no-repeat;
+    width:25px; height:25px;
+    display: inline-block; text-indent: -9999px;
+}
 /* footer-f btm */
 footer .btm {}
 footer .btm .left {}
