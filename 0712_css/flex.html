@@ -18,8 +18,10 @@
                 아이템정렬된방향(가로) => row
                 아이템정렬된방향(세로) => column
                 줄바꿈속성=>정렬방향기준 1줄(nowrap), 2줄이상인지(wrap) 구분 */
-            display: flex; flex-flow:row nowrap;
+            display: flex; flex-flow:row wrap;
             justify-content: flex-end;
+            align-content: center;
+            height: 900px;
             /* 메인축 정렬방법 justify-content */
             /* 
                 flex-flow:row 입력 경우
@@ -34,13 +36,30 @@
                 중앙=>center
                 아래=>flex-end
             */
+            /* 교차축 정렬방법
+                align-items, align-contents, align-self 
+                1. align-items : 부모속성, 아이템이 1줄일 때
+                2. align-content : 부모속성, 아이템이 2줄이상일 때
+                3. align-self : 자식속성, 개별값 적용
 
+                교차축 정렬 시 주의사항(+메인축정렬도 동일)
+                정렬대상(item)의 크기보다 그 부모의 크기가 커야 한다. (해당 축 방향)
+                ex) 교차축이 수직이고 item 높이가 200px이라면
+                    부모의 크기는 최소 201px 이상
+                ex) 교차축이 수평이고 item 1개 너비가 100px이면
+                    부모의 너비는 101px 이상
+                ex) 메인축이 수평이고 item 1개 너비가 100px,
+                    item이 총 5개 있을 때 부모 너비는 최소 501px 이상
+            */
         }
         .container .item {
-            width:200px; height:200px;
+            width:80%; height:200px;
             background: lime;
             border-radius: 50%;
         }
+        /* .container .item:nth-child(2) {
+            align-self:;
+        } */
     </style>
 </head>
 <body>
