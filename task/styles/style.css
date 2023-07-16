@@ -1,0 +1,189 @@
+/* all-layout */
+header, main, footer {
+    width:1152px; margin:0 auto;
+}
+header {}
+header #h_top {
+    height: 52px; 
+    display: flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center; 
+}
+header #h_top .left {
+    display: flex; flex-flow: row nowrap; gap:50px; 
+}
+header #h_top .left h1 {
+    width: 105px; height: 27px; padding-top:10px;
+}
+header #h_top .left h1 a {}
+header #h_top .left h1 a img {width: 100%;}
+header #h_top .left nav {}
+header #h_top .left nav ul {
+    display: flex; flex-flow: row nowrap; gap:20px;
+    
+}
+header #h_top .left nav ul li {line-height: 52px; }
+header #h_top .left nav ul li a {}
+header #h_top .left nav ul li a:hover {color:#2392e9;}
+header #h_top .right {
+    display: flex; flex-flow: row nowrap; gap:20px;
+}
+header #h_top .right li {}
+header #h_top .right li a {}
+header #h_top .right li a:hover {color:#2392e9;}
+main {}
+main .visual {
+    height: 300px;
+    display: flex; flex-flow: row nowrap;
+}
+main .visual .left {}
+main .visual .left .traffic_control {}
+main .visual .left .traffic_control img {width: 100%; height: 100%;}
+main .visual .right {}
+main .visual .right .contest {}
+main .visual .right .contest img {width: 100%; height: 100%;}
+/* 제목 디자인 그룹 */
+main section .title {
+    padding:50px 0 10px;
+    border-bottom: 1px solid #aaa;
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; align-items:center;
+} 
+main section .title h2 {
+    font-size:1.44rem; font-weight:500; letter-spacing:-0.02em;
+}
+main section .title .site {
+    border:1px solid #aaa; padding:10px;
+}
+main section .title .more i {font-size:30px;}
+main .service {}
+main .service .title {}
+main .service .title h2 {}
+main .service .title a {}
+main .service .contents {
+    padding:20px; text-align:center;
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; align-items: center;}
+main .service .contents a {}
+main .service .contents a img {}
+main .service .contents a span {
+    font-size:0.833rem; letter-spacing: -0.02em; 
+    text-align: center; display: block;
+}
+main .board {overflow:hidden;}
+/* 공통 그룹 */
+main .board > div {
+    width:calc(33.33% - 22px); float: left;
+}
+main .board > div .title {height: 90px;}
+main .board .event {}
+main .board .festival {margin:0 22px;}
+main .board .service {width:33.33%;}
+/* 게시판 카테고리 */
+main .board div .contents a .administrative {color:#028ab6;}
+main .board div .contents a .environment {color:#599100;}
+main .board div .contents a .housing {color:#c35c3c;}
+main .board div .contents a .culture {color:#9b64d3;}
+/* 공통 내용 */
+main .board .event .contents,
+main .board .festival .contents {margin-top:17px;}
+main .board .event .contents a,
+main .board .festival .contents a {
+    display:block; margin-bottom: 25px; overflow: hidden;
+}
+main .board .event .contents a:last-child,
+main .board .festival .contents a:last-child {margin-bottom:0;}
+main .board .event .contents a span,
+main .board .festival .contents a span {padding:1px 0;}
+main .board .event .contents a span:first-child,
+main .board .festival .contents a span:first-child {
+    margin-right: 10px; float:left;
+}
+main .board .event .contents a span:last-child,
+main .board .festival .contents a span:last-child {
+    white-space:nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    float:right; width:85%;
+}
+main .board .event {}
+main .board .event .title {}
+main .board .event .title h2 {}
+main .board .event .title .more {}
+main .board .event .title .more .fa-square-plus {}
+main .board .event .contents {}
+main .board .event .contents a {}
+main .board .event .contents a span {}
+main .board .event .contents a .environment {}
+main .board .event .contents a .culture {}
+main .board .event .contents a .administrative {}
+main .board .festival {}
+main .board .festival .title {}
+main .board .festival .title h2 {}
+main .board .festival .title .more {}
+main .board .festival .title .more .fa-square-plus {}
+main .board .festival .contents {}
+main .board .festival .contents a {}
+main .board .festival .contents a span {}
+main .board .festival .contents a .housing {}
+main .board .festival .contents a .culture {}
+main .board .festival .contents a .environment {}
+main .board .service {}
+main .board .service .title {border: 0;}
+main .board .service .title h2 {}
+main .board .service .contents {
+    background-color: #eff4f8;
+    display: flex; flex-flow: wrap;
+}
+main .board .service .contents a {
+    width:50%; text-align:left; margin-bottom:25px;
+}
+main .board .service .contents a:nth-last-child(2),
+main .board .service .contents a:last-child {margin-bottom: 0;}
+footer {}
+footer .top {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    border:1px solid #aaa; margin-top:30px;
+    border-left: 0; border-right: 0; padding:20px 0;
+}
+footer .top .left {}
+footer .top .left a {color:#aaa; letter-spacing:-0.02em;}
+footer .top .left a:nth-child(2) {color:#000;}
+footer .top .left a::after {
+    content:''; width:1px; height:10px;
+    background:#aaa; display:inline-block;
+    margin:0 10px;
+}
+footer .top .left a:last-child::after {display:none;}
+footer .top .right {}
+footer .top .right a {
+    background: no-repeat;
+    width:25px; height:25px;
+    display: inline-block; text-indent: -9999px;
+}
+footer .top .right a:first-child {background-image:url(../images/icon_sns2/icon_set_sns_02.png);}
+footer .top .right a:first-child:hover {background-image:url(../images/icon_sns2/icon_set_sns_09.png);}
+footer .top .right a:nth-child(2) {background-image:url(../images/icon_sns2/icon_set_sns_03.png);}
+footer .top .right a:nth-child(2):hover {background-image:url(../images/icon_sns2/icon_set_sns_10.png);}
+footer .top .right a:nth-child(3) {background-image:url(../images/icon_sns2/icon_set_sns_04.png);}
+footer .top .right a:nth-child(3):hover {background-image:url(../images/icon_sns2/icon_set_sns_11.png);}
+footer .top .right a:nth-child(4) {background-image:url(../images/icon_sns2/icon_set_sns_05.png);}
+footer .top .right a:nth-child(4):hover {background-image:url(../images/icon_sns2/icon_set_sns_12.png);}
+footer .top .right a:nth-child(5) {background-image:url(../images/icon_sns2/icon_set_sns_06.png);}
+footer .top .right a:nth-child(5):hover {background-image:url(../images/icon_sns2/icon_set_sns_13.png);}
+footer .top .right a:last-child {background-image:url(../images/icon_sns2/icon_set_sns_07.png);}
+footer .top .right a:last-child:hover {background-image:url(../images/icon_sns2/icon_set_sns_14.png);}
+footer .btm {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center; margin:20px 0;
+}
+footer .btm .left {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+}
+footer .btm .left p {padding-right: 10px;}
+footer .btm .left p img {}
+footer .btm .left address {line-height:20px; letter-spacing:-0.06em;}
+footer .btm .right {}
+footer .btm .right a {}
+footer .btm .right a img {}
