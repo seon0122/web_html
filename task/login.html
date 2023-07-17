@@ -14,7 +14,7 @@
     <header>
         <div id="h_top">
             <div class="left">
-                <h1><a href="#"><img src="./images/seoul.png" alt="서울특별시"></a></h1>
+                <h1><a href="http://127.0.0.1:5500/index.html"><img src="./images/seoul.png" alt="서울특별시"></a></h1>
                 <nav>
                     <ul>
                         <li><a href="#">서울소식</a></li>
@@ -51,14 +51,17 @@
                 <form action="#" method="post" id="loginFrm">
                     <fieldset>
                         <legend class="skip">검색양식</legend>
-                        <input type="text" value="아이디" placeholder="아이디(5~15자의 영문,숫자만 가능)">
-                        <input type="password" value="비밀번호" placeholder="비밀번호(입력 실패 5회 시 잠금 처리)">
-                        <button type="submit" title="login"><span>로그인</span></button>
+                        <label for="user_id"></label>
+                        <input type="text" id="user_id" placeholder="아이디(최대 15자만 가능)" maxlength="15">
+                        <label for="user_pw"></label>
+                        <input type="password" id="user_pw" placeholder="비밀번호">
+                        <button type="submit" title="login">로그인</button>
+                        <div class="join">
+                            <a href="#"><i class="fa-regular fa-user"></i>회원가입</a>
+                            <a href="#"><span>아이디/비밀번호 찾기</span></a></div>
+                        </div>
                     </fieldset>
                 </form>
-                <div class="join">
-                    <a href="#"><span>회원가입</span></a>
-                    <a href="#"><span>아이디/비밀번호 찾기</span></a></div>
             </div>
         </div>
     </main>
