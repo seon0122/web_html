@@ -41,10 +41,7 @@ main .login_wrap .title .left {}
 main .login_wrap .title .left p {}
 main .login_wrap .title .left p img {}
 main .login_wrap .title .right {margin-left:100px;}
-main .login_wrap .title .right h2 {
-    background-color: pink;
-    font-size:2rem;
-}
+main .login_wrap .title .right h2 {font-size:2rem;}
 main .login_wrap .title .right h2 span {font-size:2rem; color:#2392e9;}
 main .login_wrap .title .right p {
     line-height:25px; margin:10px 0;
@@ -55,9 +52,9 @@ main .login_wrap .title .right p:last-child {
 }
 main .login_wrap .title .right p span {color:red; font-size:0.833rem;}
 main .login_wrap .title .right p .fa-solid {margin-right:5px;}
-main .login_wrap .contents {    background-color: yellow;
+main .login_wrap .contents {
     display: flex; flex-flow: column nowrap;
-    justify-content: center; align-items: center;
+    justify-content: center; align-items: center; 
 }
 main .login_wrap .contents h3 {
     color:#2392e9;
@@ -67,14 +64,32 @@ main .login_wrap .contents h3 {
 main .login_wrap .contents #loginFrm {
     margin-top:50px;
     display: flex; flex-flow: column nowrap;
-    justify-content: center; align-items: center;
+    justify-content: center; align-items: center; 
 }
-main .login_wrap .contents #loginFrm fieldset {}
-main .login_wrap .contents #loginFrm fieldset input {}
-main .login_wrap .contents #loginFrm fieldset button {}
-main .login_wrap .contents #loginFrm fieldset button span {}
-main .login_wrap .contents .join {}
+main .login_wrap .contents #loginFrm fieldset {
+    display: flex; flex-flow: column nowrap; 
+}
+main .login_wrap .contents #loginFrm fieldset label {}
+main .login_wrap .contents #loginFrm fieldset #user_id,
+main .login_wrap .contents #loginFrm fieldset #user_pw {
+    padding:20px 200px 20px 10px; margin-bottom:10px;
+    border:1px solid #000;
+}
+main .login_wrap .contents #loginFrm fieldset button {
+    padding:20px 200px; margin-bottom:10px;
+    background: #2392e9; color:#fff;
+}
+main .login_wrap .contents .join {
+    display: flex; flex-flow: row nowrap; justify-content:space-between; align-items: center;
+}
 main .login_wrap .contents .join a {}
+main .login_wrap .contents .join a:first-child {
+    padding:10px 15px; border:1px solid #2392e9; border-radius:5px;
+    background:#ebf6ff;
+}
+main .login_wrap .contents .join a .fa-user {
+    padding-right:5px;
+}
 main .login_wrap .contents .join a span {}
 footer {}
 footer .top {
