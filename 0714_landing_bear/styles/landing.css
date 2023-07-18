@@ -1,0 +1,213 @@
+/* 1. title */
+.title_bg {
+    background:url(../images/bg1.png) no-repeat fixed center 70%;
+    background-size: cover;
+    position:relative; 
+}
+.title_bg::after {
+    content: '';
+    display:block; height: 800px; width:100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(0,0,0,0.65) 100%);
+    position:absolute; left:0; top:0; z-index:90;
+    /* absolute 적용 시 기본 block w100%는 inline처럼 변한다. (크기 안쓰면 인식 못함) */
+}
+.title_bg #snow {
+    position:absolute; left:0; top:0;
+    z-index:200; width:100%; height:800px;
+}
+.title_bg .title {
+    /* background:rgba(255,255,0,0.5); */
+    width:1200px; height:800px; margin:0 auto;
+    display: flex; flex-flow: column nowrap; align-items: center;
+    z-index:100; position:relative;
+}
+.title_bg .title .logo {
+    align-self: flex-start;
+}
+.title_bg .title .logo img {}
+.title_bg .title h1 {
+    font-size:3.157rem; line-height:90px; font-weight:500;
+    margin-top:175px; color:#fff; text-align: center;
+}
+.title_bg .title h1 em {font-size:3.157rem; line-height:90px; font-weight:700;}
+.title_bg .title .sponsor {
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    padding:30px 60px; border-radius:50px;
+    margin-top:48px;
+}
+.title_bg .title .sponsor span {
+    font-size:1.777rem; color:#fff; letter-spacing:-0.04em;
+    padding-right: 10px;
+}
+.title_bg .title .sponsor span img {}
+.title_bg .title .qna {
+    align-self: flex-end; background: #222; 
+    padding:15px 25px; border-radius: 30px; 
+    margin:20px 117px 0 0; 
+}
+.title_bg .title .qna img {}
+.title_bg .title .qna span {
+    font-size: 1.333rem; letter-spacing: -0.04em; color:#fff; padding:0 10px;
+}
+.title_bg .title .qna span img {}
+/* 2. quiz 영역 */
+.quiz_bg {
+    background: url(../images/quiz_bg.png) no-repeat center;
+    background-size: cover;
+}
+.quiz_bg .quiz {
+    width:1200px; margin:0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    padding:100px 0;
+}
+/* .quiz_bg .quiz > * {background: pink;} */
+.quiz_bg .quiz .left {width:548px;}
+.quiz_bg .quiz .left h2 {
+    font-size:3.157rem; letter-spacing:-0.04em; font-weight:700; color:#fff;
+    text-align: center;
+}
+.quiz_bg .quiz .left h3 {
+    font-size:1.333rem; letter-spacing:-0.04em; font-weight:500; color:#fff;
+    margin:35px 0;
+}
+.quiz_bg .quiz .left #quiz_frm {}
+.quiz_bg .quiz .left #quiz_frm fieldset {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li {margin:25px 0;}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input {
+    appearance:none; /* form input 요소 숨기기 */
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label span {
+    background:blueviolet url(../images/quiz_un_check.png) no-repeat;
+    padding-left:34px; 
+    font-size:1.333rem; letter-spacing:-0.04em; font-weight:500; color:#fff;
+}
+/* 상태선택자 (radio check될 경우 span의 이미지 변경하기 */
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input:checked+span {
+    background:blueviolet url(../images/quiz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset #answer_btn {
+    font-size:1.333rem; letter-spacing:-0.04em; font-weight:500; color:#fff;
+    padding:20px 200px; background:#222; border-radius:30px;
+    margin-top:35px; width:548px;
+}
+.quiz_bg .quiz .right {}
+.quiz_bg .quiz .right h2 {
+    width:550px; padding:20px 0; background:#ff7200;
+    border-top-left-radius:10px; border-top-right-radius:10px;
+    text-align: center;
+}
+.quiz_bg .quiz .right h2 img {margin-right:10px;}
+.quiz_bg .quiz .right h2 span {
+    font-size:1.333rem; letter-spacing:-0.04em; font-weight:500; color:#fff;
+    vertical-align: super;
+}
+.quiz_bg .quiz .right .contents {
+    width:550px; padding:60px 0; background:#fff;
+    border-bottom-left-radius:10px; border-bottom-right-radius:10px;
+    text-align: center;
+}
+.quiz_bg .quiz .right .contents em {
+    font-size:5rem; color:#ff7200; font-weight:700; letter-spacing: -0.04em;
+}
+.quiz_bg .quiz .right .contents span {}
+.quiz_bg .quiz .right .contents span:nth-child(2) {
+    font-size:3.157rem; color:#ff7200; font-weight:700; letter-spacing: -0.04em;
+}
+.quiz_bg .quiz .right .contents span:last-child {
+    font-size:3.157rem; color:#222; font-weight:700; letter-spacing: -0.04em;
+}
+.quiz_bg .quiz .right .update {
+    font-weight:500; letter-spacing: -0.04em; color:#fff;
+    margin-top:30px; text-align: center;
+}
+/* 3. video */
+.video_bg {
+    background: url(../images/video_bg.png) no-repeat center;
+    background-size: cover; padding:100px 0;
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+.video_bg h2 {
+    font-weight: 700; line-height: 90px; font-size:3.157rem; text-align: center;
+}
+.video_bg iframe {
+    width:800px; height:500px; padding:50px 0; 
+}
+.video_bg .sponsor {
+    background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,114,0,1) 100%);
+    padding:30px 60px; border-radius:50px;
+}
+.video_bg .sponsor span {
+    font-size:1.777rem; color:#fff; letter-spacing:-0.04em;
+    padding-right: 10px;
+}
+.video_bg .sponsor span img {}
+/* 4. 50% */
+.bg50 {
+    background: url(../images/50_bg.png) no-repeat center;
+    background-size: cover; 
+}
+.bg50 .wrap50 {
+    width:1200px; margin:0 auto;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center;
+    padding:100px 0; 
+}
+.bg50 .wrap50 h2 {
+    font-size: 3.157rem; line-height: 90px; color:#fff; font-weight: 700;
+}
+.bg50 .wrap50 h2 span {
+    font-size: 3.157rem; line-height: 90px; color:#222; font-weight: 700;
+    background: #fff;
+}
+.bg50 .wrap50 .contents {
+    font-size: 1.777rem; line-height: 55px; color:#fff; margin:50px 0;
+}
+.bg50 .wrap50 img {width: 1200px; height: 600px;}
+/* 5. 28조/27cm/332만명 */
+.warming_bg {
+    background:#f1f1f1;
+}
+.warming_bg .warming {
+    width:1200px; margin:0 auto; 
+    padding:100px 0; text-align: center;
+}
+.warming_bg .warming h2 {
+    font-size: 3.157rem; font-weight:700;
+}
+.warming_bg .warming .contents {
+    font-size: 1.777rem; margin:80px 0; line-height: 51px;
+}
+.warming_bg .warming ul {
+    display: flex; flex-flow: row nowrap;
+}
+.warming_bg .warming ul li {
+    width: calc(33.33% - 40px / 3);
+    margin-right: 20px;
+}
+.warming_bg .warming ul li .top {
+    height: 300px; background:center 50%;
+    background-size: cover;
+}
+.warming_bg .warming ul li:nth-child(1) .top {
+    background-image: url(../images/28.png);
+}
+.warming_bg .warming ul li:nth-child(2) .top {
+    background-image: url(../images/27.png);
+}
+.warming_bg .warming ul li:nth-child(3) .top {
+    margin-right: 0;
+    background-image: url(../images/332.png);
+}
+.warming_bg .warming ul li .top h3 {
+    font-size: 2.369rem; font-weight: 700; color:#fff;
+    padding:30px 30px 0 30px;
+}
+.warming_bg .warming ul li .top p {
+    font-size:1.333rem; color:#fff; margin-top:30px;
+}
+.warming_bg .warming ul li .list_contents {
+    height: 200px; background: #fff; padding:20px 33px; line-height: 29px;
+}
