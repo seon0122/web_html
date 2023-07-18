@@ -11,122 +11,120 @@
     <link rel="icon" href="./images/polar-bear.png" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/landing.css">
 </head>
 <body>
     <!-- 1. title -->
-    <div class="title_bg">
-        <img src="#" alt="">
+    <section class="title_bg"><!-- bg -->
         <div class="title">
-            <h1><a href="#"><img src="#" alt="WWF"></a></h1>
-            <h2>생존의 벼랑 끝에 서 있는<br><em>북극곰을 지켜주세요</em></h2>
-            <a href="#" id="sponsor">북극곰 후원하기<i></i></a>
-            <a href="#" class="qna"><i></i>후원관련 자주 묻는 질문 보기<i></i></a>
+            <a href="#" class="logo"><img src="./images/logo.png" alt="WWF"></a>
+            <h1>생존의 벼랑 끝에 서 있는<br><em>북극곰을 지켜주세요</em></h1>
+            <a href="#" class="sponsor"><span>북극곰 후원하기</span><img src="./images/arrow_forward_ios.png" alt=""></a>
+            <a href="#" class="qna"><img src="./images/sms.png" alt=""><span>후원관련 자주 묻는 질문 보기</span><img src="./images/arrow_forward_ios.png" alt=""></a>
         </div>
-    </div>
+        <canvas id="snow"><!-- 눈 내리는 자바스크립트 삽입태그 --></canvas>
+    </section>
     <!-- 2. quiz -->
-    <div class="quiz_bg">
-        <img src="#" alt="">
+    <section class="quiz_bg"><!-- bg -->
         <div class="quiz">
             <div class="left">
-                <p>quiz</p>
-                <p>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</p>
-                <p><i></i>30%</p>
-                <p><i></i>40%</p>
-                <p><i></i>50%</p>
-                <p><i></i>60%</p>
-                <a href="#">정답 확인 하기</a>
+                <h2>Quiz</h2>
+                <h3>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</h3>
+                <form id="quiz_frm" action="#" method="get">
+                    <fieldset>
+                        <legend class="skip">퀴즈</legend>
+                        <!-- ul>li*4>label>input:radio+span -->
+                        <ul>
+                            <li><label for="q1"><input type="radio" name="quiz" id="q1"><span>30%</span></label></li>
+                            <li><label for="q2"><input type="radio" name="quiz" id="q2"><span>40%</span></label></li>
+                            <li><label for="q3"><input type="radio" name="quiz" id="q3"><span>50%</span></label></li>
+                            <li><label for="q4"><input type="radio" name="quiz" id="q4"><span>60%</span></label></li>
+                        </ul>
+                        <button type="submit" id="answer_btn">정답 확인 하기</button>
+                    </fieldset>
+                </form>
             </div>
             <div class="right">
-                <span><i></i>퀴즈 참여 현황</span>
-                <span><em>5529</em>명<span>참여</span></span>
-                <span>*퀴즈 참여 현황은 매주 업데이트 됩니다</span>
+                <h2><img src="./images/person.png" alt=""><span>퀴즈 참여 현황</span></h2>
+                <p class="contents"><em>5529</em><span>명</span><span> 참여</span></p>
+                <p class="update">*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
             </div>
         </div>
-    </div>
+    </section>
     <!-- 3. youtube -->
-    <div class="youtube_bg">
-        <img src="#" alt="">
-        <div class="youtube">
-            <h2>죽은 어미 곁을 떠나지 못하는<br>새끼 북극곰의 이야기</h2>
-            <video src="#"></video>
-            <a href="#" id="sponsor">북극곰 후원하기<i></i></a>
-        </div>
-    </div>
+    <section class="video_bg">
+        <h2>죽은 어미 곁을 떠나지 못하는<br>새끼 북극곰의 이야기</h2>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/u9V5MBqhLRc" title="기후변화를 막고 녹아내리는 북극에서 북극곰을 지켜주세요!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <a href="#" class="sponsor"><span>북극곰 후원하기</span><img src="./images/arrow_forward_ios.png" alt=""></a>
+    </section>
     <!-- 4. 50%감소 -->
-    <div class="50_bg">
-        <img src="#" alt="">
-        <div class="50">
-            <h2>최근 20년 사이 북극의 빙하 면적은<br><span>50%</span>감소하였습니다</h2>
-            <h3>북극은 북극곰의 주 서식지이자 사냥터지만<br>
-                이 순간에도 녹아 내리는 빙하로 인해 북극곰은 갈 곳을 잃었습니다</h3>
-            <img src="#" alt="">
+    <section class="bg50">
+        <div class="wrap50"><!-- 글자가 왼쪽으로 정렬되어있어 div 한번 더 묶음 -->
+            <h2>최근 20년 사이 북극의 빙하 면적은<br><span>50%</span> 감소하였습니다</h2>
+            <p class="contents">북극은 북극곰의 주 서식지이자 사냥터지만<br>
+                이 순간에도 녹아 내리는 빙하로 인해 북극곰은 갈 곳을 잃었습니다</p>
+            <img src="./images/50.jpg" alt="">
         </div>
-    </div>
+    </section>
     <!-- 5. 28조/27cm/332만명 -->
-    <div class="warning_bg">
-        <div class="warning">
+    <section class="warming_bg">
+        <div class="warming">
             <h2>빙하가 녹으면 인류 재앙으로 돌아옵니다</h2>
-            <h3>지구온난화로 북극의 온도는 빠르게 상승하고 빙하는 더욱 빠르게 녹아가고 있습니다.<br>
-                빙하가 무너져 내리는 경고를 결코 무시해서는 안됩니다.</h3>
-            <div class="w_contents">
-                <ul class="contents">
-                    <li>
-                        <img src="#" alt="">
-                        <span>28조 톤</span>
-                        <span>23년 동안 녹은 빙하의 양</span>
-                    </li>
-                    <li>1994년~2017년까지 23년동안 녹은 빙하의 양 28조 톤. 해당 동안 해수면 약 3.5cm 상승. 영국 리즈대학교 앤드루 셰퍼드 교수는 "해수면이 1cm 높아질 때 600만명이 터전을 잃는다"라고 했습니다.</li>
-                </ul>
-                <ul class="contents">
-                    <li>
-                        <img src="#" alt="">
-                        <span>27cm</span>
-                        <span>앞으로 높아질 지구 해수면</span>
-                    </li>
-                    <li>22년 8월 덴마크 그린란드 지질연구소 연구팀은 "지금까지 그린란드 빙하가 녹으면 해수면이 올라갈 것이라는 결과가 나왔지만 27cm는 지금껏 나온 예측치의 두배 수준"이라고 말했습니다.</li>
-                </ul>
-                <ul class="contents">
-                    <li>
-                        <img src="#" alt="">
-                        <span>332만 명</span>
-                        <span>예상 침수 피해 인원</span>
-                    </li>
-                    <li>클라이밋 센트럴 데이터에 따르면 해수면 상승과 태풍으로 우리나라의 국토 5%가 물에 잠기고 332만 여명이 침수 피해 가능성이 있다고 예측됩니다.</li>
-                </ul>
-            </div>
+            <p class="contents">지구온난화로 북극의 온도는 빠르게 상승하고 빙하는 더욱 빠르게 녹아가고 있습니다.<br>
+                빙하가 무너져 내리는 경고를 결코 무시해서는 안됩니다.</p>
+            <ul>
+                <li>
+                    <div class="top"><!-- bg -->
+                        <h3>28조 톤</h3>
+                        <p>23년 동안 녹은 빙하의 양</p>
+                    </div>
+                    <p class="list_contents">1994년~2017년까지 23년동안 녹은 빙하의 양 28조 톤. 해당 동안 해수면 약 3.5cm 상승. 영국 리즈대학교 앤드루 셰퍼드 교수는 "해수면이 1cm 높아질 때 600만명이 터전을 잃는다"라고 했습니다.</p>
+                </li>
+                <li>
+                    <div class="top"><!-- bg -->
+                        <h3>27cm</h3>
+                        <p>앞으로 높아질 지구 해수면</p>
+                    </div>
+                    <p class="list_contents">22년 8월 덴마크 그린란드 지질연구소 연구팀은 "지금까지 그린란드 빙하가 녹으면 해수면이 올라갈 것이라는 결과가 나왔지만 27cm는 지금껏 나온 예측치의 두배 수준"이라고 말했습니다.</p>
+                </li>
+                <li>
+                    <div class="top"><!-- bg -->
+                        <h3>332만 명</h3>
+                        <p>예상 침수 피해 인원</p>
+                    </div>
+                    <p class="list_contents">클라이밋 센트럴 데이터에 따르면 해수면 상승과 태풍으로 우리나라의 국토 5%가 물에 잠기고 332만 여명이 침수 피해 가능성이 있다고 예측됩니다.</p>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
     <!-- 6. 지구위기 -->
-    <div class="crisis_bg">
-        <img src="#" alt="">
+    <section class="crisis_bg">
         <div class="crisis">
             <h2>북극곰의 위기는<br><span>지구 전체의 위기</span>입니다.</h2>
-            <h3>먹이사슬의 최상위 포식자인 북극곰이 멸종된다면<br>
-                생태계의 불균형으로 인해 지구 전체의 위기로 이어집니다</h3>
+            <p>먹이사슬의 최상위 포식자인 북극곰이 멸종된다면<br>
+                생태계의 불균형으로 인해 지구 전체의 위기로 이어집니다</p>
             <img src="#" alt="">
         </div>
-    </div>
+    </section>
     <!-- 7. WWF -->
-    <div class="wwf_bg">
-        <img src="#" alt="">
+    <section class="wwf_bg">
         <div class="wwf">
             <h2>"믿을 수 있는 환경보전 단체 WWF"</h2>
-            <h3>WWF는 1961년에 설립된<br>
+            <p>WWF는 1961년에 설립된<br>
                 세계 최대 비영리 환경보전 기관으로,<br>
                 세계 100여 개국에서 600만 후원자들과 함께<br>
-                활발히 활동하고 있습니다.</h3>
-            <h3>WWF는 사람과 자연이 조화를 이루며<br>
-                살아가는 미래를 만들어가고자 합니다.</h3>
+                활발히 활동하고 있습니다.</p>
+            <p>WWF는 사람과 자연이 조화를 이루며<br>
+                살아가는 미래를 만들어가고자 합니다.</p>
         </div>
-    </div>
+    </section>
     <!-- 8. 후원선물 -->
-    <div class="gift_bg">
-        <img src="#" alt="">
+    <section class="gift_bg">
         <div class="gift">
             <div class="top">
                 <h2>북극곰 보호에 참여하시면<br>
                     감사 선물을 드립니다</h2>
-                <a href="#" id="sponsor">북극곰 후원하기<i></i></a>
+                <a href="#" class="sponsor"><span>북극곰 후원하기</span><img src="./images/arrow_forward_ios.png" alt=""></a>
             </div>
             <div class="btm">
                 <div class="g_contents">
@@ -146,26 +144,27 @@
             </div>
             <span>* 정기 후원에 참여하고 연말 정산 세액 공제 혜택 받으세요!</span>
         </div>
-    </div>
+    </section>
     <!-- 9. 후원하기 -->
-    <div class="sponsor_bg">
-        <img src="#" alt="">
+    <section class="sponsor_bg">
         <div class="sponsor">
             <h2>북극곰의 위기,<br>
                 지켜볼 수 만은 없습니다</h2>
-            <h3>WWF와 함께 북극곰을 지켜주세요</h3>
-            <a href="#" id="sponsor">북극곰 후원하기<i></i></a>
+            <p>WWF와 함께 북극곰을 지켜주세요</p>
+            <a href="#" class="sponsor"><span>북극곰 후원하기</span><img src="./images/arrow_forward_ios.png" alt=""></a>
         </div>
-    </div>
+    </section>
     <!-- 10. 결제안내사항 -->
-    <div class="info">
+    <section class="info">
         <p>결제안내사항</p>
         <p>- 정기 후원금은 매월 4일에 출금됩니다. (출금 실패 시 10,15,20,25일에 재청구가 시도됩니다.)<br>
             - 첫 정기 후원금은 4,10,15,20,25일 중 가까운 일자에 결제됩니다.<br>
             - 결제일자가 주말 또는 휴일인 경우 은행 영업일 기준 다음날 출금(결제) 됩니다.<br>
             - 신용카드 후원 시 나이스빌링, 나이스_정기과금, 후원금_나이스 또는 Niice로 표시되어 청구됩니다.<br>
             - 일시 후원금은 신청 즉시 결제가 이루어집니다.</p>
-    </div>
+    </section>
+    <!-- 자바스크립트 작성위치 -->
+    <script src="./script/snow.js"></script>
 </body>
 </html>
 <!-- css background-image사용 >> 주석bg -->
